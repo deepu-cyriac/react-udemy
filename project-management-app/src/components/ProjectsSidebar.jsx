@@ -3,7 +3,7 @@ import Button from "./Button";
 export default function ProjectsSidebar({
   onStartAddProject,
   projects,
-  onSelectProject,
+  onSelect,
   selectedProjectId,
 }) {
   return (
@@ -26,7 +26,7 @@ export default function ProjectsSidebar({
           return (
             <li key={project.id}>
               <button
-                onClick={() => onSelectProject(project.id)}
+                onClick={() => onSelect(project.id)}
                 className={cssClasses}
               >
                 {project.title}
