@@ -1,0 +1,4 @@
+.btn:hover {
+  background-color: skyblue; /* Light background */
+  color: #000 !important;
+}
