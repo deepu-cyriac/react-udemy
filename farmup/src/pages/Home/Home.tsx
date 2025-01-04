@@ -6,6 +6,8 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Content from "../../components/Content/Content";
 
+import contents from "../../data/contents.json";
+
 const Home: React.FC = () => {
   return (
     <div className="d-flex flex-column min-vh-100">
@@ -25,7 +27,7 @@ const Home: React.FC = () => {
         <Container>
           <Row>
             <Col>
-              <Content />
+              <Content contents={contents} />
             </Col>
           </Row>
         </Container>

@@ -1,14 +1,33 @@
+import { useState } from "react";
+import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const Content: React.FC = () => {
+interface ContentProps {
+  contents: any[];
+}
+
+const Content: React.FC<ContentProps> = (props) => {
+  const [content, setContent] = useState(props.contents);
   return (
     <div>
-      <h1>Farmup Content</h1>
-      <Link to="/info/1">product 1</Link>
-      <br />
-      <Link to="/info/2">product 2</Link>
-      <br />
-      <Link to="/info/3">product 3</Link>
+      {content.map((content, index) => {
+        return (
+          <div key={index}>
+            <Link to={`/info/${content.id}`}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>{content.name}</Card.Title>
+                  <Card.Text>
+                    Scientific Name: {content.scientificName}
+                  </Card.Text>
+                  <Card.Text>Family: {content.family}</Card.Text>
+                  <Card.Text>Country of Origin: {content.origin}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Link>
+          </div>
+        );
+      })}
     </div>
   );
 };

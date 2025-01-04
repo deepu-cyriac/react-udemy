@@ -8,10 +8,8 @@ const Header: React.FC = () => {
           to="/"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
-          FarmUp
+          <h2>FarmUp</h2>
         </NavLink>
-        <br />
-        <Link to="/info/1">product 1</Link>
       </nav>
     </div>
   );
