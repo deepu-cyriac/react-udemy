@@ -12,19 +12,18 @@ const Content: React.FC<ContentProps> = (props) => {
     <div>
       {content.map((content, index) => {
         return (
-          <div key={index}>
-            <Link to={`/info/${content.id}`}>
-              <Card>
-                <Card.Body>
-                  <Card.Title>{content.name}</Card.Title>
-                  <Card.Text>
-                    Scientific Name: {content.scientificName}
-                  </Card.Text>
-                  <Card.Text>Family: {content.family}</Card.Text>
-                  <Card.Text>Country of Origin: {content.origin}</Card.Text>
-                </Card.Body>
-              </Card>
-            </Link>
+          <div key={index} className="inner-content">
+            <Card>
+              <Card.Body>
+                <Card.Title>{content.name}</Card.Title>
+                <Card.Text>Scientific Name: {content.scientificName}</Card.Text>
+                <Card.Text>Family: {content.family}</Card.Text>
+                <Card.Text>Country of Origin: {content.origin}</Card.Text>
+                <Card.Text>
+                  <Link to={`/info/${content.id}`}>Learn More</Link>
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </div>
         );
       })}
