@@ -3,26 +3,24 @@ import Footer from "../../components/Footer/Footer";
 import Content from "../../components/Content/Content";
 
 import contents from "../../data/contents.json";
+import "./Home.css";
 
 const Home: React.FC = () => {
   return (
-    <div>
-      {/* <Container> */}
-      {/* Header Section */}
-      <header>
-        <Header />
-      </header>
+    <div className="page-container">
+      <div className="content-wrap">
+        <header>
+          <Header />
+        </header>
 
-      {/* Content Section */}
-      <main>
-        <Content contents={contents} />
-      </main>
+        <main>
+          <Content contents={contents} />
+        </main>
+      </div>
 
-      {/* Footer Section */}
       <footer>
         <Footer />
       </footer>
-      {/* </Container> */}
     </div>
   );
 };
