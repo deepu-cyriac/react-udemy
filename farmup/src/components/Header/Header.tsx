@@ -1,17 +1,16 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
-    <div>
+    <div className="bg-dark text-white text-center py-3">
       <nav>
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "active" : "")}
+          style={{ textDecoration: "none", color: "white" }}
         >
-          FarmUp
+          <h2>FarmUp</h2>
         </NavLink>
-        <br />
-        <Link to="/info/1">product 1</Link>
       </nav>
     </div>
   );

@@ -1,14 +1,38 @@
+import { Button, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const Content: React.FC = () => {
+import "./Content.css";
+
+interface ContentProps {
+  contents: any[];
+}
+
+const Content: React.FC<ContentProps> = (props) => {
+  const content = props.contents;
   return (
     <div>
-      <h1>Farmup Content</h1>
-      <Link to="/info/1">product 1</Link>
-      <br />
-      <Link to="/info/2">product 2</Link>
-      <br />
-      <Link to="/info/3">product 3</Link>
+      {content.map((content, index) => {
+        return (
+          <div key={index} className="bg-light text-white text-center p-3">
+            <Card bg="dark" text="light">
+              <Card.Body>
+                <Card.Title>{content.name}</Card.Title>
+                <Card.Text>Scientific Name: {content.scientificName}</Card.Text>
+                <Card.Text>Family: {content.family}</Card.Text>
+                <Card.Text>Country of Origin: {content.origin}</Card.Text>
+                <Button variant="outline-light" className="card-button">
+                  <Link
+                    to={`/info/${content.id}`}
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    Learn More
+                  </Link>
+                </Button>
+              </Card.Body>
+            </Card>
+          </div>
+        );
+      })}
     </div>
   );
 };

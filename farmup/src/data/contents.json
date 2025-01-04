@@ -1,0 +1,37 @@
+[
+  {
+    "id": "123",
+    "name": "Tomato",
+    "scientificName": "Solanum lycopersicum",
+    "family": "Solanaceae",
+    "origin": "South America"
+  },
+  {
+    "id": "124",
+    "name": "Carrot",
+    "scientificName": "Daucus carota",
+    "family": "Apiaceae",
+    "origin": "Iran"
+  },
+  {
+    "id": "125",
+    "name": "Lettuce",
+    "scientificName": "Lactuca sativa",
+    "family": "Asteraceae",
+    "origin": "Mediterranean"
+  },
+  {
+    "id": "126",
+    "name": "Potato",
+    "scientificName": "Solanum tuberosum",
+    "family": "Solanaceae",
+    "origin": "South America"
+  },
+  {
+    "id": "127",
+    "name": "Cucumber",
+    "scientificName": "Cucumis sativus",
+    "family": "Cucurbitaceae",
+    "origin": "India"
+  }
+]
