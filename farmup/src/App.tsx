@@ -5,6 +5,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import Home from "./pages/Home/Home";
 import InfoPage from "./pages/InfoPage/InfoPage";
+import PostsPage from "./pages/PostsPage/PostsPage";
 
 const App: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/info/:postId" element={<InfoPage />} />
+        <Route path="/posts" element={<PostsPage />} />
       </Routes>
     </Router>
   );
