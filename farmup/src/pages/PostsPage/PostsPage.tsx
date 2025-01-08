@@ -1,5 +1,8 @@
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import Content from "../../components/Content/Content";
+
+import contents from "../../data/contents.json";
 
 const PostsPage: React.FC = () => {
   return (
@@ -10,7 +13,7 @@ const PostsPage: React.FC = () => {
         </header>
 
         <main>
-          <p>This is the posts page!</p>
+          <Content contents={contents} />
         </main>
       </div>
 

@@ -1,8 +1,7 @@
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import Content from "../../components/Content/Content";
+import Banner from "../../components/Banner/Banner";
 
-import contents from "../../data/contents.json";
 import "./Home.css";
 
 const Home: React.FC = () => {
@@ -14,7 +13,7 @@ const Home: React.FC = () => {
         </header>
 
         <main>
-          <Content contents={contents} />
+          <Banner />
         </main>
       </div>
 
