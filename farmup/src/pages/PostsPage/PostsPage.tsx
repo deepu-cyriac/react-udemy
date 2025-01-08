@@ -1,10 +1,10 @@
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import Banner from "../../components/Banner/Banner";
+import Content from "../../components/Content/Content";
 
-import "./Home.css";
+import contents from "../../data/contents.json";
 
-const Home: React.FC = () => {
+const PostsPage: React.FC = () => {
   return (
     <div className="page-container">
       <div className="content-wrap">
@@ -13,7 +13,7 @@ const Home: React.FC = () => {
         </header>
 
         <main>
-          <Banner />
+          <Content contents={contents} />
         </main>
       </div>
 
@@ -24,4 +24,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default PostsPage;

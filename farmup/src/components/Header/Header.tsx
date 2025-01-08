@@ -1,4 +1,6 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+
+import "./Header.css";
 
 const Header: React.FC = () => {
   return (
@@ -11,6 +13,9 @@ const Header: React.FC = () => {
         >
           <h2>FarmUp</h2>
         </NavLink>
+        <Link to={`/posts`} style={{ textDecoration: "none", color: "white" }}>
+          Posts
+        </Link>
       </nav>
     </div>
   );
