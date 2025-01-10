@@ -13,6 +13,7 @@ const Home: React.FC = () => {
         </header>
 
         <main>
+          <div className="carousel-overlay"></div>
           <Banner />
         </main>
       </div>

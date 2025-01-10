@@ -4,7 +4,7 @@ import "./Banner.css";
 
 const Banner: React.FC = () => {
   return (
-    <Carousel controls={false} indicators={false} interval={2000} wrap={true}>
+    <Carousel controls={false} indicators={false} interval={5000} wrap={true}>
       <Carousel.Item>
         <img
           className="d-block w-100"

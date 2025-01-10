@@ -4,7 +4,7 @@ import "./Header.css";
 
 const Header: React.FC = () => {
   return (
-    <div className="bg-dark text-white text-center py-3">
+    <div className="header-main text-center py-3">
       <nav>
         <NavLink
           to="/"
