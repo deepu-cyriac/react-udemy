@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import Header from "../../components/Header/Header";
+import NormalHeader from "../../components/NormalHeader/NormalHeader";
 import Footer from "../../components/Footer/Footer";
 
 import "./InfoPage.css";
@@ -11,7 +11,7 @@ const InfoPage: React.FC = () => {
     <div className="page-container">
       <div className="content-wrap">
         <header>
-          <Header />
+          <NormalHeader />
         </header>
 
         <main>

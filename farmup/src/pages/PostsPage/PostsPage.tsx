@@ -1,4 +1,4 @@
-import Header from "../../components/Header/Header";
+import NormalHeader from "../../components/NormalHeader/NormalHeader";
 import Footer from "../../components/Footer/Footer";
 import Content from "../../components/Content/Content";
 
@@ -9,7 +9,7 @@ const PostsPage: React.FC = () => {
     <div className="page-container">
       <div className="content-wrap">
         <header>
-          <Header />
+          <NormalHeader />
         </header>
 
         <main>
