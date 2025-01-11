@@ -1,10 +1,10 @@
 import { NavLink, Link } from "react-router-dom";
 
-import "./Header.css";
+import "./NormalHeader.css";
 
-const Header: React.FC = () => {
+const NormalHeader: React.FC = () => {
   return (
-    <div className="header-main text-center py-3">
+    <div className="bg-dark text-white text-center py-3 mt-auto">
       <nav>
         <NavLink
           to="/"
@@ -21,4 +21,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default NormalHeader;

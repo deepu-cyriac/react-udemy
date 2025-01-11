@@ -4,3 +4,14 @@ nav {
   align-items: center;
   padding: 1rem 2rem;
 }
+
+.header-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent; /* Transparent black background */
+  z-index: 2;
+  padding: 10px 20px;
+  color: white;
+}
