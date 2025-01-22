@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Rubber Plants of Kerala",
+    "short-desc": "A detailed story of Rubber Plants of Kerala"
+  },
+  {
+    "id": 2,
+    "title": "Coffee Plantations",
+    "short-desc": "Learn more about Coffee Plantations"
+  },
+  {
+    "id": 3,
+    "title": "Cocoa Plantations",
+    "short-desc": "A detailed story of Cocoa Plantations"
+  },
+  {
+    "id": 4,
+    "title": "Black Pepper Farming",
+    "short-desc": "Learn more about Black Pepper Farming"
+  }
+]
