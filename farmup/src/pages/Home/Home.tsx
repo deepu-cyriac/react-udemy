@@ -18,7 +18,7 @@ const Home: React.FC = () => {
         <Banner />
         <main className="m-3">
           <div className="d-flex justify-content-around flex-wrap">
-            <Card className="m-1">
+            <Card className="my-4">
               <Card.Img
                 variant="top"
                 src="https://media.istockphoto.com/id/543212762/photo/tractor-cultivating-field-at-spring.jpg?s=612x612&w=0&k=20&c=uJDy7MECNZeHDKfUrLNeQuT7A1IqQe89lmLREhjIJYU="
@@ -32,7 +32,7 @@ const Home: React.FC = () => {
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
-            <Card className="m-1">
+            <Card className="my-4">
               <Card.Img
                 variant="top"
                 src="https://media.istockphoto.com/id/543212762/photo/tractor-cultivating-field-at-spring.jpg?s=612x612&w=0&k=20&c=uJDy7MECNZeHDKfUrLNeQuT7A1IqQe89lmLREhjIJYU="
@@ -46,7 +46,7 @@ const Home: React.FC = () => {
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
-            <Card className="m-1">
+            <Card className="my-4">
               <Card.Img
                 variant="top"
                 src="https://media.istockphoto.com/id/543212762/photo/tractor-cultivating-field-at-spring.jpg?s=612x612&w=0&k=20&c=uJDy7MECNZeHDKfUrLNeQuT7A1IqQe89lmLREhjIJYU="
@@ -60,7 +60,7 @@ const Home: React.FC = () => {
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
-            <Card className="m-1">
+            <Card className="my-4">
               <Card.Img
                 variant="top"
                 src="https://media.istockphoto.com/id/543212762/photo/tractor-cultivating-field-at-spring.jpg?s=612x612&w=0&k=20&c=uJDy7MECNZeHDKfUrLNeQuT7A1IqQe89lmLREhjIJYU="
