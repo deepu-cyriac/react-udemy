@@ -13,8 +13,8 @@ const Content: React.FC<ContentProps> = (props) => {
     <div>
       {content.map((content, index) => {
         return (
-          <div key={index} className="bg-light text-white text-center p-3">
-            <Card bg="dark" text="light">
+          <div key={index} className="main-content-posts text-center p-3">
+            <Card data-bs-theme="dark">
               <Card.Body>
                 <Card.Title>{content.name}</Card.Title>
                 <Card.Text>Scientific Name: {content.scientificName}</Card.Text>

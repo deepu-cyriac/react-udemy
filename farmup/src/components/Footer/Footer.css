@@ -2,3 +2,8 @@
   position: sticky;
   bottom: 0;
 }
+
+.footer-class {
+  background-color: black;
+  color: white;
+}

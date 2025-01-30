@@ -2,3 +2,7 @@
   background-color: skyblue; /* Light background */
   color: #000 !important;
 }
+
+.main-content-posts {
+  background-color: black;
+}

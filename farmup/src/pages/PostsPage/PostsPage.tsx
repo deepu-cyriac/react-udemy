@@ -4,6 +4,8 @@ import Content from "../../components/Content/Content";
 
 import contents from "../../data/contents.json";
 
+import "./PostsPage.css";
+
 const PostsPage: React.FC = () => {
   return (
     <div className="page-container">
@@ -12,10 +14,14 @@ const PostsPage: React.FC = () => {
           <NormalHeader />
         </header>
 
-        <main>
+        <div className="sep-line"></div>
+
+        <main className="main-posts-content">
           <Content contents={contents} />
         </main>
       </div>
+
+      <div className="sep-line"></div>
 
       <footer>
         <Footer />

@@ -11,10 +11,10 @@ const Header: React.FC = () => {
           className={({ isActive }) => (isActive ? "active" : "")}
           style={{ textDecoration: "none", color: "white" }}
         >
-          <h2>FarmUp</h2>
+          <h2>Destino Gaming</h2>
         </NavLink>
         <Link to={`/posts`} style={{ textDecoration: "none", color: "white" }}>
-          Posts
+          <h3>Posts</h3>
         </Link>
       </nav>
     </div>
